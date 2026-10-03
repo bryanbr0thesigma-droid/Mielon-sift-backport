@@ -50,6 +50,19 @@ public final class TheSiftClient implements ClientModInitializer {
 
    @Override
    public void onInitializeClient() {
+      net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking.registerGlobalReceiver(
+         mielon.thesift.network.RiftLoadingPayload.ID,
+         (client, handler, buf, sender) -> {
+            mielon.thesift.network.RiftLoadingPayload payload = mielon.thesift.network.RiftLoadingPayload.read(buf);
+            if (!payload.start() && !payload.rift()) {
+               client.execute(() -> {
+                  if (net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking.canSend(mielon.thesift.network.SiftIntroReadyPayload.ID)) {
+                     net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking.send(
+                        mielon.thesift.network.SiftIntroReadyPayload.ID, net.fabricmc.fabric.api.networking.v1.PacketByteBufs.create());
+                  }
+               });
+            }
+         });
       SiftRenderTypes.registerShaders();
       registerRenderLayers();
       BlockEntityRenderers.register(ModBlocks.SIFT_PORTAL_BLOCK_ENTITY, SiftPortalRenderer::new);
