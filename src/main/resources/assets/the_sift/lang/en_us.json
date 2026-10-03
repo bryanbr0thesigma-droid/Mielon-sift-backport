@@ -153,8 +153,8 @@
   "block.the_sift.whisperbloom": "Whisperbloom",
   "item.the_sift.whisperbloom": "Whisperbloom",
   "item.the_sift.music_disc_rift": "Music Disc",
-  "item.the_sift.music_disc_rift.desc": "Fuzja J\u0105drowa - Rift",
-  "jukebox_song.the_sift.rift": "Fuzja J\u0105drowa - Rift",
+  "item.the_sift.music_disc_rift.desc": "Fuzja Jądrowa - Rift",
+  "jukebox_song.the_sift.rift": "Fuzja Jądrowa - Rift",
   "subtitles.the_sift.block.sonorous_deepslate.sound_1": "Sonorous Deepslate resonates",
   "subtitles.the_sift.block.sonorous_deepslate.sound_2": "Sonorous Deepslate resonates",
   "subtitles.the_sift.block.sonorous_deepslate.sound_3": "Sonorous Deepslate resonates",
@@ -270,5 +270,6 @@
   "jukebox_song.the_sift.wellspring": "Echo_Dev - Wellspring",
   "subtitles.the_sift.music_disc.wellspring": "Wellspring music plays",
   "subtitles.the_sift.sift_intro": "The Sift resonates",
-  "upgrade.the_sift.siftite_upgrade": "Siftite Upgrade"
+  "upgrade.the_sift.siftite_upgrade": "Siftite Upgrade",
+  "block.the_sift.overgrown_willow_shelf": "Overgrown Willow Shelf"
 }

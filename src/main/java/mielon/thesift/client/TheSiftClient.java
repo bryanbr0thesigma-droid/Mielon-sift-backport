@@ -66,6 +66,7 @@ public final class TheSiftClient implements ClientModInitializer {
       SiftRenderTypes.registerShaders();
       registerRenderLayers();
       BlockEntityRenderers.register(ModBlocks.SIFT_PORTAL_BLOCK_ENTITY, SiftPortalRenderer::new);
+      BlockEntityRenderers.register(ModBlocks.SHELF_BLOCK_ENTITY, mielon.thesift.client.render.ShelfRenderer::new);
       BlockEntityRenderers.register(ModBlocks.SONOROUS_DEEPSLATE_BLOCK_ENTITY, SonorousBeamRenderer::new);
       EntityRendererRegistry.register(ModEntities.RIFT, RiftRenderer::new);
       EntityRendererRegistry.register(ModEntities.MINI_RIFT, MiniRiftRenderer::new);

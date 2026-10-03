@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "shelf",
+  "key": {
+    "#": {
+      "item": "the_sift:stripped_overgrown_willow_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "   ",
+    "###"
+  ],
+  "result": {
+    "item": "the_sift:overgrown_willow_shelf",
+    "count": 6
+  }
+}

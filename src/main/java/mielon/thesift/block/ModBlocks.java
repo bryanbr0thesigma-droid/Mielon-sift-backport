@@ -367,6 +367,15 @@ public class ModBlocks {
       "overgrown_willow_button", properties -> new ButtonBlock(properties, BlockSetType.OAK, 30, true), Properties.copy(Blocks.OAK_BUTTON)
    );
    public static final BlockItem OVERGROWN_WILLOW_BUTTON_ITEM = registerBlockItem("overgrown_willow_button", OVERGROWN_WILLOW_BUTTON);
+   public static final Block OVERGROWN_WILLOW_SHELF = registerBlock(
+      "overgrown_willow_shelf", mielon.thesift.block.OvergrownShelfBlock::new, Properties.copy(Blocks.OAK_PLANKS).strength(2.0F, 3.0F).noOcclusion()
+   );
+   public static final BlockItem OVERGROWN_WILLOW_SHELF_ITEM = registerBlockItem("overgrown_willow_shelf", OVERGROWN_WILLOW_SHELF);
+   public static final BlockEntityType<mielon.thesift.block.entity.ShelfBlockEntity> SHELF_BLOCK_ENTITY = Registry.register(
+      BuiltInRegistries.BLOCK_ENTITY_TYPE,
+      new ResourceLocation("the_sift", "shelf"),
+      BlockEntityType.Builder.of(mielon.thesift.block.entity.ShelfBlockEntity::new, OVERGROWN_WILLOW_SHELF).build(null)
+   );
    public static final Block OVERGROWN_WILLOW_SIGN = registerBlock(
       "overgrown_willow_sign", properties -> new StandingSignBlock(properties, WoodType.OAK), Properties.copy(Blocks.OAK_SIGN)
    );
@@ -497,6 +506,7 @@ public class ModBlocks {
       flammable.add(OVERGROWN_WILLOW_PRESSURE_PLATE, 5, 20);
       flammable.add(OVERGROWN_WILLOW_BUTTON, 5, 20);
       flammable.add(OVERGROWN_WILLOW_SIGN, 5, 20);
+      flammable.add(OVERGROWN_WILLOW_SHELF, 5, 20);
       flammable.add(OVERGROWN_WILLOW_WALL_SIGN, 5, 20);
       flammable.add(OVERGROWN_WILLOW_HANGING_SIGN, 5, 20);
       flammable.add(OVERGROWN_WILLOW_WALL_HANGING_SIGN, 5, 20);

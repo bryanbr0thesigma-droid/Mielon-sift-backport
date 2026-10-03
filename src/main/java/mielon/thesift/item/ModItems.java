@@ -220,6 +220,7 @@ public final class ModItems {
             output.accept(ModBlocks.OVERGROWN_WILLOW_PRESSURE_PLATE_ITEM);
             output.accept(ModBlocks.OVERGROWN_WILLOW_BUTTON_ITEM);
             output.accept(ModBlocks.OVERGROWN_WILLOW_SIGN_ITEM);
+            output.accept(ModBlocks.OVERGROWN_WILLOW_SHELF_ITEM);
             output.accept(ModBlocks.OVERGROWN_WILLOW_HANGING_SIGN_ITEM);
             output.accept(OVERGROWN_WILLOW_BOAT);
             output.accept(OVERGROWN_WILLOW_CHEST_BOAT);
