@@ -50,6 +50,10 @@ public final class TheSiftClient implements ClientModInitializer {
 
    @Override
    public void onInitializeClient() {
+      mielon.thesift.client.mixin.DimensionSpecialEffectsAccessor.theSift$effects().put(
+         mielon.thesift.world.SiftDayNightCycle.EFFECTS_ID, new mielon.thesift.client.render.SiftSpecialEffects());
+      net.fabricmc.fabric.api.client.rendering.v1.DimensionRenderingRegistry.registerSkyRenderer(
+         mielon.thesift.world.TheSiftDimension.LEVEL_KEY, mielon.thesift.client.render.SiftProceduralSkyRenderer::render);
       net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking.registerGlobalReceiver(
          mielon.thesift.network.RiftLoadingPayload.ID,
          (client, handler, buf, sender) -> {

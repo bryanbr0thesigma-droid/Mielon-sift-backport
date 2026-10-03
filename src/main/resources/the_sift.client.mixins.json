@@ -2,7 +2,14 @@
   "required": true,
   "package": "mielon.thesift.client.mixin",
   "compatibilityLevel": "JAVA_17",
-  "client": ["IchorWaterParticleMixin","NoteParticleMixin","RiftAmbientSoundMixin"],
+  "client": [
+    "IchorWaterParticleMixin",
+    "NoteParticleMixin",
+    "RiftAmbientSoundMixin",
+    "DimensionSpecialEffectsAccessor",
+    "ClientLevelSkyMixin",
+    "SiftWeatherTextureMixin","SiftCloudMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

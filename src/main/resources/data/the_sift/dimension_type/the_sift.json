@@ -13,7 +13,7 @@
   "min_y": 0,
   "height": 256,
   "infiniburn": "#minecraft:infiniburn_overworld",
-  "effects": "minecraft:overworld",
+  "effects": "the_sift:the_sift",
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",
     "value": {

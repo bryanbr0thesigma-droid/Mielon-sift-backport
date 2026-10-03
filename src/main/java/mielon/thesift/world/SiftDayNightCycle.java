@@ -11,6 +11,10 @@ public final class SiftDayNightCycle {
    public static final int NIGHT_END = 24060;
    public static final int PERIOD_TICKS = 24120;
 
+   public static final ResourceLocation EFFECTS_ID = new ResourceLocation("the_sift", "the_sift");
+   /** Vanilla time-of-day fraction at which the sky is as dark as the Sift's night (about 60% sky light). */
+   private static final float NIGHT_TIME_OF_DAY = 0.254F;
+
    private SiftDayNightCycle() {
    }
 
@@ -28,5 +32,14 @@ public final class SiftDayNightCycle {
    private static float smooth(float value) {
       float clamped = Math.max(0.0F, Math.min(1.0F, value));
       return clamped * clamped * (3.0F - 2.0F * clamped);
+   }
+
+   /** Replaces the vanilla sun-angle curve so only skylight (not a sun orbit) changes between day and night. */
+   public static float timeOfDay(long totalTicks) {
+      return NIGHT_TIME_OF_DAY * nightBlend(totalTicks);
+   }
+
+   public static boolean isNightTarget(long vanillaStyleTime) {
+      return nightBlend(vanillaStyleTime) >= 0.5F;
    }
 }

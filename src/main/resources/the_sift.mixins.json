@@ -38,7 +38,10 @@
     "LavaIchorMixins$Flow",
     "SiftStemMixins$Growing",
     "SiftStemMixins$Attached",
-    "WallBlockIchorMixin"
+    "WallBlockIchorMixin",
+    "ServerLevelClockMixin",
+    "LevelAccess",
+    "DimensionTypeTimeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
