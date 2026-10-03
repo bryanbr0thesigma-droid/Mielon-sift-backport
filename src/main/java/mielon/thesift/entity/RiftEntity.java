@@ -117,6 +117,11 @@ public final class RiftEntity extends Entity {
       return BlockPos.containing(this.getX(), this.getY(), this.getZ());
    }
 
+   @Override
+   public AABB getBoundingBoxForCulling() {
+      return this.getPortalBounds().inflate(4.0);
+   }
+
    public AABB getPortalBounds() {
       return portalBoundsAt(this.position(), this.isLongAlongX());
    }

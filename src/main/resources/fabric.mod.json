@@ -23,10 +23,17 @@
   "entrypoints": {
     "main": [
       "mielon.thesift.TheSiftMod"
+    ],
+    "client": [
+      "mielon.thesift.client.TheSiftClient"
     ]
   },
   "mixins": [
-    "the_sift.mixins.json"
+    "the_sift.mixins.json",
+    {
+      "config": "the_sift.client.mixins.json",
+      "environment": "client"
+    }
   ],
   "accessWidener": "the_sift.accesswidener",
   "depends": {

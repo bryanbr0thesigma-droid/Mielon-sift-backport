@@ -21,13 +21,13 @@
         8
       ],
       "rotation": {
-        "angle": 20,
-        "axis": "x",
         "origin": [
           8,
           0,
           8
-        ]
+        ],
+        "axis": "x",
+        "angle": 22.5
       },
       "faces": {
         "north": {
@@ -99,14 +99,13 @@
         8
       ],
       "rotation": {
-        "x": 0,
-        "y": -90,
-        "z": 20,
         "origin": [
           8,
           0,
           8
-        ]
+        ],
+        "axis": "y",
+        "angle": 45.0
       },
       "faces": {
         "north": {
@@ -178,14 +177,13 @@
         8
       ],
       "rotation": {
-        "x": -160,
-        "y": 0,
-        "z": 180,
         "origin": [
           8,
           0,
           8
-        ]
+        ],
+        "axis": "x",
+        "angle": 22.5
       },
       "faces": {
         "north": {
@@ -257,14 +255,13 @@
         8
       ],
       "rotation": {
-        "x": 0,
-        "y": 90,
-        "z": -20,
         "origin": [
           8,
           0,
           8
-        ]
+        ],
+        "axis": "y",
+        "angle": 45.0
       },
       "faces": {
         "north": {
