@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "the_sift:cobbled_siftslate"
+  },
+  "result": "the_sift:cobbled_siftslate_stairs",
+  "count": 1
+}

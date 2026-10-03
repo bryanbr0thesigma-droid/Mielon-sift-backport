@@ -1,31 +1,25 @@
 {
-  "attributes": {
-    "minecraft:audio/background_music": {
-      "default": {
-        "max_delay": 24000,
-        "min_delay": 12000,
-        "sound": "minecraft:music.overworld.deep_dark"
-      }
-    },
-    "minecraft:visual/sky_color": "#ffffff",
-    "minecraft:visual/ambient_particles": [
-      {
-        "particle": {
-          "type": "the_sift:sift_note"
-        },
-        "probability": 0.000032
-      }
-    ]
-  },
-  "carvers": [
-    "the_sift:cave",
-    "the_sift:cave_extra_underground",
-    "the_sift:canyon"
-  ],
-  "creature_spawn_probability": 0.012,
+  "temperature": 0.8,
   "downfall": 0.4,
+  "has_precipitation": false,
   "effects": {
-    "water_color": "#4adce8"
+    "sky_color": 16777215,
+    "fog_color": 13234161,
+    "water_color": 4906216,
+    "water_fog_color": 2060152,
+    "particle": {
+      "probability": 3.2e-05,
+      "options": {
+        "type": "the_sift:sift_note"
+      }
+    }
+  },
+  "carvers": {
+    "air": [
+      "the_sift:cave",
+      "the_sift:cave_extra_underground",
+      "the_sift:canyon"
+    ]
   },
   "features": [
     [],
@@ -63,8 +57,6 @@
       "the_sift:lava_floor"
     ]
   ],
-  "has_precipitation": false,
-  "spawn_costs": {},
   "spawners": {
     "ambient": [],
     "axolotls": [],
@@ -82,5 +74,6 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.8
+  "spawn_costs": {},
+  "creature_spawn_probability": 0.012
 }

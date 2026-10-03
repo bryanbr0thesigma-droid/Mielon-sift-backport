@@ -50,7 +50,6 @@
   "block.the_sift.overgrown_willow_trapdoor": "Overgrown Willow Trapdoor",
   "block.the_sift.overgrown_willow_pressure_plate": "Overgrown Willow Pressure Plate",
   "block.the_sift.overgrown_willow_button": "Overgrown Willow Button",
-  "block.the_sift.overgrown_willow_shelf": "Overgrown Willow Shelf",
   "block.the_sift.overgrown_willow_sign": "Overgrown Willow Sign",
   "block.the_sift.overgrown_willow_wall_sign": "Overgrown Willow Wall Sign",
   "block.the_sift.overgrown_willow_hanging_sign": "Overgrown Willow Hanging Sign",
@@ -71,7 +70,6 @@
   "item.the_sift.overgrown_willow_trapdoor": "Overgrown Willow Trapdoor",
   "item.the_sift.overgrown_willow_pressure_plate": "Overgrown Willow Pressure Plate",
   "item.the_sift.overgrown_willow_button": "Overgrown Willow Button",
-  "item.the_sift.overgrown_willow_shelf": "Overgrown Willow Shelf",
   "item.the_sift.overgrown_willow_sign": "Overgrown Willow Sign",
   "item.the_sift.overgrown_willow_hanging_sign": "Overgrown Willow Hanging Sign",
   "item.the_sift.overgrown_willow_foliage": "Overgrown Willow Foliage",
@@ -155,8 +153,8 @@
   "block.the_sift.whisperbloom": "Whisperbloom",
   "item.the_sift.whisperbloom": "Whisperbloom",
   "item.the_sift.music_disc_rift": "Music Disc",
-  "item.the_sift.music_disc_rift.desc": "Fuzja Jądrowa - Rift",
-  "jukebox_song.the_sift.rift": "Fuzja Jądrowa - Rift",
+  "item.the_sift.music_disc_rift.desc": "Fuzja J\u0105drowa - Rift",
+  "jukebox_song.the_sift.rift": "Fuzja J\u0105drowa - Rift",
   "subtitles.the_sift.block.sonorous_deepslate.sound_1": "Sonorous Deepslate resonates",
   "subtitles.the_sift.block.sonorous_deepslate.sound_2": "Sonorous Deepslate resonates",
   "subtitles.the_sift.block.sonorous_deepslate.sound_3": "Sonorous Deepslate resonates",
@@ -271,5 +269,6 @@
   "item.the_sift.music_disc_wellspring.desc": "Echo_Dev - Wellspring",
   "jukebox_song.the_sift.wellspring": "Echo_Dev - Wellspring",
   "subtitles.the_sift.music_disc.wellspring": "Wellspring music plays",
-  "subtitles.the_sift.sift_intro": "The Sift resonates"
+  "subtitles.the_sift.sift_intro": "The Sift resonates",
+  "upgrade.the_sift.siftite_upgrade": "Siftite Upgrade"
 }

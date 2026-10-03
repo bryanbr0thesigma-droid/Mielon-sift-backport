@@ -3,7 +3,7 @@ package mielon.thesift.block;
 import java.util.function.Function;
 import mielon.thesift.block.entity.SiftPortalBlockEntity;
 import mielon.thesift.block.entity.SonorousDeepslateBlockEntity;
-import mielon.thesift.mixin.BlockEntityTypeHelper;
+import mielon.thesift.util.BlockEntityTypeHelper;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;

@@ -34,7 +34,6 @@
     "fluid_level_floodedness": 0.0,
     "fluid_level_spread": 0.0,
     "lava": 0.0,
-    "preliminary_surface_level": 0.0,
     "ridges": {
       "type": "minecraft:noise",
       "noise": "the_sift:plateau_selector",
@@ -58,7 +57,8 @@
     },
     "vein_gap": 0.0,
     "vein_ridged": 0.0,
-    "vein_toggle": 0.0
+    "vein_toggle": 0.0,
+    "initial_density_without_jaggedness": 0.0
   },
   "ore_veins_enabled": false,
   "sea_level": 0,

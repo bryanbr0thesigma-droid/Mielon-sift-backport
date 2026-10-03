@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "the_sift:siftslate_bricks"
+  },
+  "result": "the_sift:siftslate_brick_wall",
+  "count": 1
+}

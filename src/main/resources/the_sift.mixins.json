@@ -1,8 +1,9 @@
 {
   "required": true,
   "package": "mielon.thesift.mixin",
-  "compatibilityLevel": "JAVA_25",
+  "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BlockEntityTypeAccessor",
     "SiftiteDeathMixin",
     "RiftPathfindingMixin",
     "NoteBlockMixin",
@@ -36,7 +37,8 @@
     "LavaIchorMixins$DownwardContact",
     "LavaIchorMixins$Flow",
     "SiftStemMixins$Growing",
-    "SiftStemMixins$Attached"
+    "SiftStemMixins$Attached",
+    "WallBlockIchorMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -26,16 +26,18 @@
     {
       "type": "minecraft:random_offset",
       "xz_spread": {
-        "type": "minecraft:trapezoid",
-        "max": 3,
-        "min": -3,
-        "plateau": 0
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -3,
+          "max_inclusive": 3
+        }
       },
       "y_spread": {
-        "type": "minecraft:trapezoid",
-        "max": 1,
-        "min": -1,
-        "plateau": 0
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -1,
+          "max_inclusive": 1
+        }
       }
     },
     {

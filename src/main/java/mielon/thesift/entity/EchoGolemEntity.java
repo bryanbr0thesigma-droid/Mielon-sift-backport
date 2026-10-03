@@ -1885,7 +1885,7 @@ public final class EchoGolemEntity extends AbstractGolem implements GeoEntity {
       this.routeTicks = Math.max(0, NbtCompat.getIntOr(input, "route_ticks", 0));
       this.soulTarget = NbtCompat.getPackedPos(input, "soul_target");
       this.soulApproach = NbtCompat.getPackedPos(input, "soul_approach");
-      this.canyonEntrance = java.util.Objects.requireNonNullElse(NbtCompat.getPackedPos(input, "canyon_entrance"), NbtCompat.getPackedPos(input, "exit_target"));
+      this.canyonEntrance = (NbtCompat.getPackedPos(input, "canyon_entrance") != null ? NbtCompat.getPackedPos(input, "canyon_entrance") : NbtCompat.getPackedPos(input, "exit_target"));
       this.canyonMidpoint = NbtCompat.getPackedPos(input, "canyon_midpoint");
       this.canyonCluster = NbtCompat.getPackedPos(input, "canyon_cluster");
       this.ignoredCanyon = NbtCompat.getPackedPos(input, "ignored_canyon");

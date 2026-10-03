@@ -1,24 +1,25 @@
 {
-  "attributes": {
-    "minecraft:visual/sky_color": "#ffffff",
-    "minecraft:visual/ambient_particles": [
-      {
-        "particle": {
-          "type": "the_sift:sift_note"
-        },
-        "probability": 0.00044000
-      }
-    ]
-  },
-  "carvers": [
-    "the_sift:cave",
-    "the_sift:cave_extra_underground",
-    "the_sift:canyon"
-  ],
-  "creature_spawn_probability": 0.08,
+  "temperature": 0.72,
   "downfall": 0.8,
+  "has_precipitation": true,
   "effects": {
-    "water_color": "#4adce8"
+    "sky_color": 16777215,
+    "fog_color": 13234161,
+    "water_color": 4906216,
+    "water_fog_color": 2060152,
+    "particle": {
+      "probability": 0.00044,
+      "options": {
+        "type": "the_sift:sift_note"
+      }
+    }
+  },
+  "carvers": {
+    "air": [
+      "the_sift:cave",
+      "the_sift:cave_extra_underground",
+      "the_sift:canyon"
+    ]
   },
   "features": [
     [],
@@ -85,13 +86,6 @@
       "the_sift:surface_sculk_region"
     ]
   ],
-  "has_precipitation": true,
-  "spawn_costs": {
-    "minecraft:sniffer": {
-      "charge": 0.7,
-      "energy_budget": 0.15
-    }
-  },
   "spawners": {
     "ambient": [],
     "axolotls": [],
@@ -121,5 +115,11 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.72
+  "spawn_costs": {
+    "minecraft:sniffer": {
+      "charge": 0.7,
+      "energy_budget": 0.15
+    }
+  },
+  "creature_spawn_probability": 0.08
 }
