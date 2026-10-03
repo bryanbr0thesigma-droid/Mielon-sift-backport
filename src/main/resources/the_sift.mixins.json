@@ -1,0 +1,47 @@
+{
+  "required": true,
+  "package": "mielon.thesift.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "SiftiteDeathMixin",
+    "RiftPathfindingMixin",
+    "NoteBlockMixin",
+    "GoatHornMixin",
+    "SnifferBabyMixin",
+    "SnifferInfectionMixin",
+    "AnimalSnifferInfectionSaveMixin",
+    "SnifferStateAccess",
+    "IchorWaterloggedPickupMixin",
+    "EmptyCauldronIchorMixin",
+    "PointedDripstoneIchorMixin",
+    "PointedDripstoneInvoker",
+    "CropBlockMixin",
+    "VegetationBlockMixin",
+    "PitcherCropBlockMixin",
+    "EnchantmentMenuMixin",
+    "EnchantmentFuelSlotMixin",
+    "AnvilMenuMixin",
+    "ServerLevelWeatherMixin",
+    "LocateCommandMixin",
+    "IchorStateDefinitionMixin",
+    "IchorDefaultStateMixin",
+    "IchorBlockFluidStateMixin",
+    "IchorBlockPlacementMixin",
+    "IchorFlowAcceptanceMixin",
+    "IchorSimpleWaterloggedMixin",
+    "IchorScheduledTickMixin",
+    "WardenDarkSnifferMixin",
+    "IchorSnowballAdvancementMixin",
+    "LavaIchorMixins$Contact",
+    "LavaIchorMixins$DownwardContact",
+    "LavaIchorMixins$Flow",
+    "SiftStemMixins$Growing",
+    "SiftStemMixins$Attached"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
